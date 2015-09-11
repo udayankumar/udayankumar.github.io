@@ -88,12 +88,12 @@ Download the comment meta info if needed and then process and store correlation 
 cat  popularThread_linkId | gxargs --verbose -d '\n' -n 1 -I {} sh -c 'python RedditCommentsPostingTimeDelta_DownloadThreadInfo.py -o  cor {}_comments.json kk >> CorrelationScores.csv'
 {% endhighlight %}
 
-![help]({{ site.url }}/assets/images/correlation_time_score_onePerThread.png)
+![help]({{ site.url }}assets/images/correlation_time_score_onePerThread.png)
 The above plots are for correlation measurements on time to post comment with score received. We have 3000 such scores that have been plotted using a histogram - coefficient and P-values. One can clearly see that almost all the coefficients are below zero - indicating a negative correlation. The P values are transformed so that values less than 0 indicates the 5% confidence interval where null hypothesis is rejected and the alternative hypothesis is accpeted. Implying that there is a correlation between time to post comment and the score received; the correlation is negative.   
 
 Similar to above methodology, now we look at correlation between length of comment and score received in the plot below. There is no clear concensus in this case for the alternative hypothesis from the P-values although most of the correlation coefficients are positive. 
 
-![help]({{ site.url }}/assets/images/correlation_len_score_onePerThread.png)
+![help]({{ site.url }}assets/images/correlation_len_score_onePerThread.png)
 
 
 ### Way 2
@@ -113,14 +113,14 @@ BONUS: below is a plot of time to post and score received. Almost all the top sc
 
 Now I will be looking only at most popular comments in each of the 3000 threads and study the distribution of time to post, scores, and length of comments. Below are some of the charts 
 
-![help]({{ site.url }}/assets/images/histEcdfTime.png)
+![help]({{ site.url }}assets/images/histEcdfTime.png)
 
 75% of the highest scoring comments have been posted in less than 100 minutes of thread posting. Faster you post the higher are your chances of getting highest score.
 
-![help]({{ site.url }}/assets/images/histEcdfScore.png)
+![help]({{ site.url }}assets/images/histEcdfScore.png)
 Scores are almost uniformly distributed for up to 2000. After that the probability to get higher score drops dramatically. From the CDF it can be seen that almost 50% of the top comments in  a thread get less than 2000 karma points. 
 
-![help]({{ site.url }}/assets/images/histEcdfLen.png)
+![help]({{ site.url }}assets/images/histEcdfLen.png)
 The length of comments distribution is again highly right skewed and almost 75% of the top scoring comments in top 3000 threads were less than 500 characters. Reddit users appreciate succinct comments (unlike this current post).
 
 
