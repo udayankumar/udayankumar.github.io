@@ -1,0 +1,21 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Udayan Kumar
+tagline:             'My public notes'
+description:         'A place where ...'
+url:                 http://www.udayankumar.com
+baseurl:             '/'
+paginate:            5
+
+# About/contact
+author:
+  name:              Udayan Kumar
+  url:               https://twitter.com/udayankumar
+
+# Custom vars
+version:             1.0.0
