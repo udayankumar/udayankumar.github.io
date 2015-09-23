@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Reddit comments
+title: Reddit comments - Speed matters
 comments: true
 tags: [reddit, comments analysis]
 ---
@@ -38,7 +38,7 @@ grep -o 'link_id.\{0,13\}' RC_2015-01| cut -f 3 -d '"' | gsort --parallel=4 | un
 tail -n 3000 ThreadIdCommentCount | cut -f 2 -d ' '> popularThread_linkId
 {% endhighlight %}
 
-**Processing**: I have used my laptop for all the processing, I could have used Amazon/Google but I did not mind waiting 8Hrs to run a task as I was anyways going to bed. I am adding the code to the github repo - [add link]. 
+**Processing**: I have used my laptop for all the processing, I could have used Amazon/Google but I did not mind waiting 8Hrs to run a task as I was anyways going to bed. I am adding the code to the github [gist](https://gist.github.com/indolent/35896a135aeb65f344c7).
 
 One of the main challenges after identifying the thread that I was interested in was to identify all the comments belong to each of those thread. I created a grep based script for each of the linkId (Id for a thread) but it was taking just too much time to go through the datafile. To make this search a little faster, I created an index file that stored start and end position of each comment and its corresponding linkId. 
 
@@ -124,3 +124,13 @@ Scores are almost uniformly distributed for up to 2000. After that the probabili
 The length of comments distribution is again highly right skewed and almost 75% of the top scoring comments in top 3000 threads were less than 500 characters. Reddit users appreciate succinct comments (unlike this current post).
 
 
+# Conclusions and after thoughts 
+
+ Although I looked at a limited set of data, there is ample evidence that a relationship exists between time to post a comment and the score that comment gets. This relation can be explained using multiple reasonings including -
+
+1. All the important arguments/POV are posted early on and hence there is nothing new in the later comments 
+2. Since Reddit only shows limited number of comments by default, the casual readers might never make the effort to repeatedly click and read rest of the comments. Hence late comments may not Karma love
+3. A long post may not be read or comprehended correctly by readers and they are looking for quick bytes. Hence the longer posts may not imply  higher score.
+
+
+It may be a good idea now to look at different post classes - very popular , mid-popular and less popular post and investigate if similar relationship exists. 
