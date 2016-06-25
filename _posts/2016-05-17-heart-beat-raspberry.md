@@ -42,7 +42,7 @@ Also, install https://github.com/adafruit/Adafruit_Python_ADS1x15. Run `sudo pip
 I used python to read and process data from the Pulse Sensor and produce Beats per Minute (BPM) or the Heart rate. The code is available in  [here](https://github.com/indolent/heart-rate-raspberry-pi). The code draws heavily from the [Pulse Sensor Arduino](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino) for detecting the pulse and [Adafruit Python ADS Code](https://github.com/adafruit/Adafruit_Python_ADS1X15) for reading the ADC.
 
 
-Below is a screen-shot of an actual run of the code.
+Below is a screen-shot of an actual run of the code. The initial BPM is 109 but quickly converges to 74-76 range. 
 ![help]({{ site.url }}assets/images/screenShot_running.jpg)
 
 ## Accuracy 
