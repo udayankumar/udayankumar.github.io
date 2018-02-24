@@ -28,6 +28,9 @@ I used digital GPIO ports on Raspberry Pi to connect the ADC. Then connected the
 
 ![help]({{ site.url }}assets/images/PulseSensorConnections.jpg)
 
+![help]({{ site.url }}assets/images/ADC_RASP_CONNECTION.png)
+
+
 ## Configuration 
 
 Now we need to configure Raspberry Pi to enable I2C module. The detailed 
