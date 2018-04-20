@@ -30,6 +30,7 @@ I used digital GPIO ports on Raspberry Pi to connect the ADC. Then connected the
 
 ![help]({{ site.url }}assets/images/ADC_RASP_CONNECTION.png)
 
+The above schematic shows the connections between all the components
 
 ## Configuration 
 
