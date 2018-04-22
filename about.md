@@ -4,7 +4,7 @@ title: About
 comments: true
 ---
 
-I am currently working as a Data Scientist at [Now Secure](http://www.nowsecure.com). Previously, I have worked at Motorola Mobility, IBM Research and Amazon. 
+I am currently working as a Data Scientist at [Microsoft](http://www.microsoft.com). Previously, I have worked at Motorola Mobility, IBM Research and Amazon. 
 
 I have a PhD in Computer Engineering from University of Florida. The topic of my dissertation was *Identifying Social Markers from Network data based on Location, Mobility, and Proximity.*
 
