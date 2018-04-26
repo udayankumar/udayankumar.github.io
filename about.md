@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-comments: true
+comments: false
 ---
 
 I am currently working as a Data Scientist at [Microsoft](http://www.microsoft.com). Previously, I have worked at Motorola Mobility, IBM Research and Amazon. 
