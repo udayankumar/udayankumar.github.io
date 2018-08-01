@@ -53,7 +53,7 @@ The ESC control is similar to servo control, so now we can control both the moto
 
 Remove RC receiver and install the servo driver (SD)  in place. A RC receiver looks like the picture below.  RC receiver should have an antenna sticking out. 
 
-![help](/assets/images/rcReceiver.jpg)
+![help](/assets/images/RCReceiver.jpg)
 
 
 Next, connect the motor cables removed from the RC receiver to the SD, make sure that the cable connected to -ve side of the RC receiver 
