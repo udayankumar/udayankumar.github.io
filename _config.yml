@@ -10,6 +10,7 @@ description:         'A place where ...'
 url:                 http://udayankumar.com/
 baseurl:             
 paginate:            5
+future: true 
 
 # About/contact
 author:
@@ -22,3 +23,4 @@ version:             1.0.0
 plugins:
     - jekyll-sitemap
     - jekyll-paginate
+    - jekyll-seo-tag
