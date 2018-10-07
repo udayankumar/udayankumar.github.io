@@ -6,14 +6,14 @@ tags: [raspberry, ESC, RC, car, autonomous, Lidar, Neato]
 ---
 
 ![help](/assets/images/lidar.jpg)
- A lidar enables measurement of distance to the nearest object in-front of the sensor. For example, a lidar mounted on a robot can detect obstacles in the path. 
-lidar is more expensive but provides better accuracy and range than other methods such as 
+ A lidar measures distance to the nearest object in-front of the sensor. For e.g., a lidar mounted on a robot can be used to detect obstacles in the path. 
+A lidar is more expensive but provides better accuracy and range than other methods such as 
 [ultrasonic sensors](https://www.quora.com/Can-we-use-cheaper-ultrasound-technology-instead-of-LiDAR-for-driverless-cars) 
 when measuring distance. In my effort to build an autonomous car, I chose to use a Neato robovaccum lidar - XV-11. 
-In this post I am writing down my experiences of  working with it.
+In this post I am writing down my experiences of working with it.
 
-I ordered a used Neato XV-11 lidar from ebay after reading this [hack-a-day blog](https://hackaday.com/2016/01/22/how-to-use-lidar-with-the-raspberry-pi/). 
-It turned out that writing my own code and build circuit with Power and Signal separation would take considerable more time than 
+I ordered a used Neato XV-11 lidar from Ebay after reading this [hack-a-day blog](https://hackaday.com/2016/01/22/how-to-use-lidar-with-the-raspberry-pi/). 
+It turned out that writing my own code and building a circuit with Power and Signal separation would take considerable more time than 
 I wanted to spend on measuring distances! Instead, I used a XV-11 controller from 
 [GetSurreal](https://www.getsurreal.com/product/xv-lidar-controller-v1-2/), which abstracted away all of the nitty-gritty details of 
 connections and power and gave me a simple USB cable to connect to the lidar over a serial port. Even with the ready-made circuit, 
