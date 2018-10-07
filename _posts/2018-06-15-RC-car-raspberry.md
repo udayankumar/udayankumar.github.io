@@ -43,7 +43,7 @@ I will now go into the details of each of the above steps.
 
 I am using a servo driver (SD) because it is convenient to control multiple servos while maintaining electrical separation between Raspberry Pi (RPi) and motors.
 It is possible using the [latest RPi](https://www.raspberrypi.org/forums/viewtopic.php?t=109006) to control multiple servos from GPIO pins as long as the motors 
-are powered through a differnet power supply.  
+are powered through a different power supply.  
 If you want to pursue that route, [pigpio](http://abyz.me.uk/rpi/pigpio/index.html) seems to be a good library with python interface. I have not used it personally. 
 In my Red Cat car, the ESC/BEC connects directly to the battery and powers the RC receiver  and the turn servo (via RC receiver). 
 When we replace the RC receiver by SD, ESC continues to power the drive motor and provides V+ to SD which continues to powers the turn motor.  
