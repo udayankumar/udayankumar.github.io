@@ -11,7 +11,7 @@ A few weeks ago, I opened an agent instruction that had been in production for m
 
 That experience reminded me of an uncomfortable truth: prompts accumulate entropy. They bend under the weight of iteration, and unlike code, they lack the structural guardrails that keep complexity in check.  
 
-As I work on prompt templates that might be used by hundreds of customers and run thousands of times, I keep hitting the same pain points. These are issues where a small piece of code would be clearer and safer than a sprawling prompt.  
+As I work on prompt templates that will be run thousands of times, I keep hitting the same pain points. These are issues where a small piece of code would be clearer and safer than a sprawling prompt.  
 
 Of course, LLMs shine at NLP heavy tasks. But outside those, the differences between “prompt logic” and “code logic” become painfully obvious.  
 
@@ -22,9 +22,9 @@ Prompts evolve through many rounds of tweaking. Over time, instructions accumula
 
 - **Free-form placement**: Authors can drop new conditions almost anywhere, often with just a few words of context.  
 - **Ad-hoc fixes**: When a data point breaks the prompt, the typical fix is to bolt on another conditional—sometimes flagged with an emphatic *MANDATORY*. I’ve seen prompts with 17 such “MANDATORY” instructions.  
-- **Inconsistent guidance**: [Azure’s best practices](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/prompt-engineering?tabs=chat#repeat-instructions-at-the-end) suggest repeating instructions at the beginning and end of a prompt to offset recency bias. But since this is soft guidance, some authors follow it and others don’t. After multiple contributors iterate, the result is a patchwork of conflicting styles.  
+- **Inconsistent guidance**: There are several resources for software development - linters, IDEs, design patterns, etc. Such tooling is not available for prompts. There are a lot of prompting guides on the internet but there is no standard. Prompt writers often follow what worked for them in the past. Two writers may not agree on the same format. For e.g. [Azure’s best practices](https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/prompt-engineering?tabs=chat#repeat-instructions-at-the-end) suggest repeating instructions at the beginning and end of a prompt to offset recency bias. But since this is soft guidance, some authors follow it and others don’t. After multiple contributors iterate, the result is a patchwork of conflicting styles.
 
-With code, the compiler enforces discipline. It forces you into a consistent structure and throws an error if you stray. With prompts, there’s no such safeguard—mess builds silently until readability collapses.  
+With code, the compiler enforces discipline. It forces you into a consistent structure and throws an error if you stray. With prompts, there’s no such safeguard; mess builds silently until readability collapses.  
 
 ---
 
@@ -55,8 +55,3 @@ By contrast, code with good test coverage can be refactored confidently. Tests e
 ## Closing Thought  
 
 LLMs remove the hard edges of programming: no compiler errors, no enforced structure, no type checks. That flexibility is what makes them powerful—but also what makes prompts messy, fragile, and hard to maintain at scale. When clarity and reliability matter, code is still the safer language.  
-
-
-
-
-
