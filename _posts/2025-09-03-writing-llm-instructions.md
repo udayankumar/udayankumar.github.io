@@ -7,16 +7,16 @@ tags: [LLM, prompts]
 
 Thesis: Challenges of writing/maintaining a correct prompt template are far greater than a correct executable code for the same task
 
-A few weeks ago, I opened an agent instruction that had been in production for months. The prompt was nearly a thousand words long, stitched together through dozens of incremental edits. I counted 17 separate instructions marked *MANDATORY*; scattered unpredictably across the text. The agent still worked, but reading the prompt felt like trying to make sense of a team’s sticky notes shuffled out of order.  
+A few weeks ago, I opened an agent instruction that had been in production for months. The prompt was nearly a thousand words long, stitched together through dozens of incremental edits. I counted 17 separate instructions marked *MANDATORY* scattered unpredictably across the text. The agent still worked, but reading the prompt felt like trying to make sense of a team’s sticky notes shuffled out of order.  
 
-That experience reminded me of an uncomfortable truth: prompts accumulate entropy. They bend under the weight of iteration, and unlike code, they lack the structural guardrails that keep complexity in check.  
+That experience reminded me of an uncomfortable truth: prompt readability degrades as they evolve. They bend under the weight of iteration, and unlike code, they lack the structural guardrails that keep complexity in check.  
 
 As I work on prompt templates that will be run thousands of times, I keep hitting the same pain points. These are issues where a small piece of code would be clearer and safer than a sprawling prompt.  
 
 Of course, LLMs shine at NLP heavy tasks. But outside those, the differences between “prompt logic” and “code logic” become painfully obvious.  
 
 
-## 1. Instruction Creep: When Anything Goes  
+## 1. Instruction Creep: When Anything Goes Anywhere
 
 Prompts evolve through many rounds of tweaking. Over time, instructions accumulate in arbitrary places, without any enforced structure. The result is a prompt that works but is difficult to read or reason about.  
 
