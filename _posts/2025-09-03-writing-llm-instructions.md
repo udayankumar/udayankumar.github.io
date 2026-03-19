@@ -5,7 +5,7 @@ comments: true
 tags: [LLM, prompts]
 ---
 
- Context: People are writing no code agents where [execution instructions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/declarative-agent-instructions#example-instructions) or prompts are given in English. These instructions are like pseudo code with conditionals and even loops (*repeat step 1*). This is an actively evolving area and here are a few drawback that I have observed when compared to using code.
+ **Context**: People are writing no code agents where [execution instructions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/declarative-agent-instructions#example-instructions) or prompts are given in English. These instructions are like pseudo code with conditionals and even loops (*repeat step 1*). This is an actively evolving area and here are a few drawback that I have observed when compared to writing code.
 
 A few days ago, I opened an agent instruction that had been in production for months. The prompt was nearly a thousand words long, stitched together through dozens of incremental edits. I counted 17 separate instructions marked *MANDATORY* scattered unpredictably across the text. The agent still worked, but reading the prompt felt like trying to make sense of a team’s sticky notes shuffled out of order.  
 
