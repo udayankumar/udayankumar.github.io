@@ -4,7 +4,7 @@
   {% include head.html %}
   {% include googleAnalytics.html %}
 
-  <body class="theme-base-09">
+  <body class="theme-clean-minimal">
 
     {% include sidebar.html %}
 
@@ -17,6 +17,10 @@
             <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
             <small>{{ site.tagline }}</small>
           </h3>
+          <nav class="masthead-nav">
+            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/tags.html">Tags</a>
+          </nav>
         </div>
       </div>
 
@@ -25,6 +29,8 @@
         {% include comments.html %}
       </div>
     </div>
+
+    <div class="footer"><div class="container">&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. All rights reserved.</div></div>
 
     <label for="sidebar-checkbox" class="sidebar-toggle"></label>
 
