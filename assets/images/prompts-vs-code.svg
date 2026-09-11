@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-labelledby="title description">
+  <title id="title">Prompts versus code</title>
+  <desc id="description">An illustration contrasting scattered prompt instructions with organized compiler-checked code.</desc>
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  <rect x="55" y="48" width="520" height="534" rx="18" fill="#fff7ed" stroke="#fdba74" stroke-width="3"/>
+  <text x="95" y="115" fill="#9a3412" font-family="Arial, sans-serif" font-size="31" font-weight="700">PROMPT INSTRUCTIONS</text>
+  <rect x="93" y="152" width="273" height="84" rx="8" fill="#fed7aa" transform="rotate(-4 93 152)"/>
+  <text x="114" y="190" fill="#7c2d12" font-family="Arial, sans-serif" font-size="20" font-weight="700">MANDATORY: be helpful</text>
+  <text x="114" y="216" fill="#9a3412" font-family="Arial, sans-serif" font-size="16">unless context says otherwise</text>
+  <rect x="276" y="274" width="245" height="94" rx="8" fill="#fde68a" transform="rotate(5 276 274)"/>
+  <text x="297" y="311" fill="#854d0e" font-family="Arial, sans-serif" font-size="20" font-weight="700">repeat step 1</text>
+  <text x="297" y="339" fill="#a16207" font-family="Arial, sans-serif" font-size="16">when it seems necessary</text>
+  <rect x="106" y="400" width="300" height="96" rx="8" fill="#fecdd3" transform="rotate(-2 106 400)"/>
+  <text x="128" y="440" fill="#9f1239" font-family="Arial, sans-serif" font-size="20" font-weight="700">use cascade data</text>
+  <text x="128" y="468" fill="#be123c" font-family="Arial, sans-serif" font-size="16">remove PII somehow</text>
+  <path d="M485 138 C530 180 455 238 415 277 S465 365 502 399" fill="none" stroke="#f97316" stroke-width="6" stroke-dasharray="10 12"/>
+  <rect x="625" y="48" width="520" height="534" rx="18" fill="#eff6ff" stroke="#93c5fd" stroke-width="3"/>
+  <text x="666" y="115" fill="#1e3a8a" font-family="Arial, sans-serif" font-size="31" font-weight="700">CODE LOGIC</text>
+  <rect x="662" y="145" width="445" height="290" rx="10" fill="#172033"/>
+  <circle cx="692" cy="174" r="8" fill="#fb7185"/>
+  <circle cx="718" cy="174" r="8" fill="#fbbf24"/>
+  <circle cx="744" cy="174" r="8" fill="#4ade80"/>
+  <text x="694" y="225" fill="#c4b5fd" font-family="monospace" font-size="20">function sanitize(input) {</text>
+  <text x="722" y="265" fill="#e2e8f0" font-family="monospace" font-size="20">if (!schema.valid(input))</text>
+  <text x="750" y="305" fill="#fda4af" font-family="monospace" font-size="20">throw new Error(&quot;invalid&quot;);</text>
+  <text x="722" y="345" fill="#e2e8f0" font-family="monospace" font-size="20">return redact(input, piiRules);</text>
+  <text x="694" y="385" fill="#c4b5fd" font-family="monospace" font-size="20">}</text>
+  <path d="M711 485 l20 21 43 -53" fill="none" stroke="#16a34a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="790" y="493" fill="#166534" font-family="Arial, sans-serif" font-size="28" font-weight="700">CHECKED</text>
+  <text x="790" y="527" fill="#475569" font-family="Arial, sans-serif" font-size="18">clear structure, explicit rules</text>
+  <path d="M594 96 V534" stroke="#cbd5e1" stroke-width="3" stroke-dasharray="8 10"/>
+</svg>

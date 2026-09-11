@@ -141,6 +141,14 @@ a.sidebar-nav-item:focus {
   color: #999;
   font-weight: 400;
 }
+.post-hero {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem 0 2rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+}
 
 /* --- Tags: pill style --- */
 .tags {
