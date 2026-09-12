@@ -3,6 +3,8 @@ layout: post
 title: Measuring Success in data Science
 comments: true
 tags: [data science, success, failure ]
+hero_image: /assets/images/data-science-success.svg
+hero_alt: Data-science exploration tree showing paths, a viable solution, and time to learn
 ---
 
 *TL;DR: Success in data science is inversely proportional to the number of times the same steps are repeated.*

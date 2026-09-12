@@ -16,7 +16,7 @@ title: Home
 
     {% if post.hero_image %}
     <a href="{{ post.url }}" aria-label="Read {{ post.title }}">
-      <img class="post-hero" src="{{ post.hero_image | relative_url }}" alt="Small language model cost calculator">
+      <img class="post-hero" src="{{ post.hero_image | relative_url }}" alt="{{ post.hero_alt | default: post.title }}">
     </a>
     {% endif %}
 
