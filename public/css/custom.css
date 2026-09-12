@@ -84,7 +84,11 @@ pre {
 }
 .masthead-nav a:hover { color: #2563eb !important; text-decoration: none; }
 @media (max-width: 48em) {
-  .masthead .container { flex-direction: column; align-items: flex-start; }
+  .masthead .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 5rem;
+  }
   .masthead-nav { margin-top: .5rem; }
   .masthead-title small { display: none; }
 }

@@ -4,6 +4,7 @@ title: Alaska trip
 comments: true
 lang: hi
 tags: [alaska, vacation]
+hero_image: /assets/images/alaska/alaska_day8.jpg
 ---
 
 *TL;DR: Alaska trip log by my mom in Hindi*
